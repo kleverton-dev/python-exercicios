@@ -97,3 +97,28 @@ print(f"O resultado da expressão é {resultado}")
 numeros = input("Digite números de 0-9 para serem invertidos: ")
 numeros_invertidos = numeros[::-1]
 print(f"O número invertido é {numeros_invertidos}")
+
+#11. Crie um algoritmo em Python que solicite um número ao usuário e informe se o
+#anúmero é múltiplo de 7 (para isso, basta imprimir True ou False). Por exemplo,
+#se o usuário informar o número 49, o programa deve exibir a mensagem: “49 é
+#múltiplo de 7? True”.
+numero = int(input("Digite um número para verificar se é múltiplo de 7: "))
+print(f"{numero} é múltiplo de 7? {numero % 7 == 0}")
+
+#12. Crie um algoritmo em Python que solicite ao usuário três nomes e informe se
+#dois desses nomes são iguais, e também se todos os nomes são diferentes.
+
+nome1 = input("Digite o primeiro nome: ")
+nome2 = input("Digite o segundo nome: ")
+nome3 = input("Digite o terceiro nome: ")
+dois_iguais = (nome1 == nome2) or (nome1 == nome3) or (nome2 == nome3)
+todos_diferentes = (nome1 != nome2) and (nome1 != nome3) and (nome2 != nome3)
+print(f"Dois nomes são iguais? {dois_iguais}")
+print(f"Todos os nomes são diferentes? {todos_diferentes}")
+
+#13. Crie um algoritmo em Python que solicite ao usuário um número e informe se o
+#número está dentro do intervalo entre 50 e 100. O número 50 deve ser
+#considerado dentro desse intervalo, e o 100 fora do intervalo.
+numero = float(input("Digite um número para verificar se está entre 50 e 100: "))
+dentro_intervalo = (numero >= 50) and (numero < 100)
+print(f"O número {numero} está dentro do intervalo entre 50 e 100? {dentro_intervalo}")
